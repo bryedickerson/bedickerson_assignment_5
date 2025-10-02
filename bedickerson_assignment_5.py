@@ -31,3 +31,20 @@ if num > 1: # No negative values are needed for this test case
 else:
     print(f"{num} is not prime")
 print()
+# TEST CASE 3: Multiplication Table
+print("=== Challenge 3: Multiplication Table ===")
+print("Multiplication table:")
+print("  ", end="")
+
+# header numbers
+for header in range(1, 11):
+    print(f"{header:4}", end="")
+print()
+
+# Loops presenting the rows, columns, and products for the table
+for row in range(1, 11): # 1 is inclusive in the range, 11 is excluded (so 10 is technically the max value in the range)
+    print(f"{row:2}", end="")
+    for col in range(1, 11):
+        table_value = row * col # Products come from multiplying rows and colums
+        print(f"{table_value:4}", end="")
+    print()
